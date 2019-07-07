@@ -1,0 +1,94 @@
+{
+  "blueprint": {
+    "label": "Tasks",
+    "identifier": "tasks",
+    "schemas": [
+      {
+        "id": "USER_SCHEMA_ID",
+        "order": 5,
+        "label": "User",
+        "label_plural": "Users",
+        "identifier": "user",
+        "identifier_plural": "users",
+        "class_name": "User",
+        "class_name_plural": "Users",
+        "attributes": [
+          {
+            "id": "USER_EMAIL_ATTRIBUTE",
+            "order": 1,
+            "label": "E-Mail",
+            "identifier": "email",
+            "help": "The E-Mail address associated with this User",
+            "required": true,
+            "unique": true,
+            "datatype": "STRING",
+            "default_value": "",
+            "datatypeOptions": {},
+            "locked": true
+          }
+        ],
+        "relations": []
+      },
+      {
+        "id": "0.5745519151068974",
+        "order": 0,
+        "locked": false,
+        "source": "USER",
+        "label": "Task",
+        "label_plural": "Tasks",
+        "identifier": "task",
+        "identifier_plural": "tasks",
+        "class_name": "Task",
+        "class_name_plural": "Tasks",
+        "attributes": [
+          {
+            "id": "0.8328064127283386",
+            "order": 0,
+            "label": "Title",
+            "identifier": "title",
+            "help": "Describe the Task",
+            "required": true,
+            "unique": false,
+            "datatype": "STRING",
+            "default_value": null,
+            "datatypeOptions": {}
+          },
+          {
+            "id": "0.8660254010845603",
+            "order": 0,
+            "label": "Done",
+            "identifier": "done",
+            "help": "Whether or not the Task is done",
+            "required": false,
+            "unique": false,
+            "datatype": "BOOLEAN",
+            "default_value": null,
+            "datatypeOptions": {}
+          }
+        ],
+        "relations": [
+          {
+            "id": "0.8287507131028626",
+            "order": 0,
+            "type": "BELONGS_TO",
+            "required": false,
+            "schema_id": "0.5745519151068974",
+            "related_schema_id": "USER_SCHEMA_ID",
+            "reverse_relation_id": "",
+            "as": "Assignee",
+            "reverse_as": ""
+          }
+        ],
+        "reverse_relations": [],
+        "camel_case": "task",
+        "camel_case_plural": "tasks"
+      }
+    ]
+  },
+  "generator_id": "codotype-vuejs-simple-generator",
+  "configuration": {
+    "deployment": {
+      "netlify": true
+    }
+  }
+}
