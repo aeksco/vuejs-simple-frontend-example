@@ -65,7 +65,7 @@ export default {
         confirmText: 'Delete User',
         type: 'is-danger',
         onConfirm: () => {
-          this.$router.go(-1)
+          this.$router.replace('/users')
           this.$store.dispatch('user/collection/destroy', this.model.id)
           this.$toast.open('User deleted!')
         }

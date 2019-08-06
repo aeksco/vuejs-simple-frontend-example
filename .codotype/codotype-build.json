@@ -85,10 +85,10 @@
       }
     ]
   },
-  "generator_id": "codotype-vuejs-simple-generator",
   "configuration": {
     "deployment": {
-      "netlify": true
+      "netlify": false
     }
-  }
+  },
+  "generator_id": "codotype-vuejs-simple-generator"
 }

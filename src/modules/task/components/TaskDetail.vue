@@ -86,7 +86,7 @@ export default {
         confirmText: 'Delete Task',
         type: 'is-danger',
         onConfirm: () => {
-          this.$router.go(-1)
+          this.$router.replace('/tasks')
           this.$store.dispatch('task/collection/destroy', this.model.id)
           this.$toast.open('Task deleted!')
         }

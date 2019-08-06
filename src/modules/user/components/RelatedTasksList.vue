@@ -45,13 +45,8 @@
 </template>
 
 <script>
-// TODO - this component must be split up for relations and reverse relations
-// TODO - this component must be split up for relations and reverse relations
-// TODO - this component must be split up for relations and reverse relations
-// TODO - this component must be split up for relations and reverse relations
-// TODO - this component must be split up for relations and reverse relations
-// TODO - this component must be split up for relations and reverse relations
 import RelatedTaskListItem from './RelatedTaskListItem'
+
 export default {
   props: {
     user_id: {

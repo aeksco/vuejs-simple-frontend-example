@@ -19,13 +19,8 @@
 <!-- // // // //  -->
 
 <script>
-// TODO - implement reverse relations
-// TODO - implement reverse relations
-// TODO - implement reverse relations
 import UserDetail from '@/modules/user/components/UserDetail'
 
-// TODO - implement reverse relations
-// TODO - implement reverse relations
 import RelatedTasksList from '@/modules/user/components/RelatedTasksList'
 
 export default {

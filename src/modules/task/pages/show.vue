@@ -8,7 +8,7 @@
 
       <b-tabs type='is-toggle'>
 
-        <b-tab-item label="Assignee">
+        <b-tab-item label="Assignee" v-if="model.assignee_id">
           <RelatedAssigneeDetail :id="model.assignee_id"/>
         </b-tab-item>
       </b-tabs>
@@ -19,14 +19,9 @@
 <!-- // // // //  -->
 
 <script>
-// TODO - implement reverse relations
-// TODO - implement reverse relations
-// TODO - implement reverse relations
 import TaskDetail from '@/modules/task/components/TaskDetail'
 import RelatedAssigneeDetail from '@/modules/task/components/RelatedAssigneeDetail'
 
-// TODO - implement reverse relations
-// TODO - implement reverse relations
 
 export default {
   props: {
